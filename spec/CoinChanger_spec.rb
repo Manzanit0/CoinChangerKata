@@ -9,4 +9,8 @@ RSpec.describe CoinChanger do
   it "2p returns 2p" do
     expect(CoinChanger.change(2)).to eql([2])
   end
+
+  it "5p returns 5p" do
+    expect(CoinChanger.change(5)).to eql([5])
+  end
 end
