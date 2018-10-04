@@ -17,4 +17,8 @@ RSpec.describe CoinChanger do
   it "10p returns 10p" do
     expect(CoinChanger.change(10)).to eql([10])
   end
+
+  it "20p returns 20p" do
+    expect(CoinChanger.change(20)).to eql([20])
+  end
 end
